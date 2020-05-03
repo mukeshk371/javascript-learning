@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/flex-layout.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="p-05">
+        <!-- Start Odd Even -->
+        <div class="p-05">
+            <div class="card">
+                <div class="card-header flex-start-center">
+                    <strong>Q1. Check wheather the input is odd or even</strong>
+                </div>
+                <div class="card-body p-1">
+                    <input type="text" class="task-card-input mr-05" id="odd-even-input">
+                    <button class="btn-primary" onclick="checkOddEven()">Check</button>
+                </div>
+                <div class="card-footer p-1">
+                    <span>Result = </span>
+                    <strong id="odd-even-result"></strong>
+                </div>
+            </div>
+        </div>
+        <!-- End Odd Even -->
+        <!-- Start Average -->
+        <div class="p-05">
+            <div class="card">
+                <div class="card-header flex-start-center">
+                    <strong>Q1. Check average of the inputs</strong>
+                </div>
+                <div class="card-body p-1">
+                    <input type="text" class="task-card-input mr-05" id="input-1">
+                    <input type="text" class="task-card-input mr-05" id="input-2">
+                    <button class="btn-primary" onclick="checkAverage()">Check</button>
+                </div>
+                <div class="card-footer p-1">
+                    <span>Result = </span>
+                    <strong id="average-result"></strong>
+                </div>
+            </div>
+        </div>
+        <!-- End Average -->
+    </div>
+</body>
+
+</html>
