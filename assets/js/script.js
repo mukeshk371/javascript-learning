@@ -20,3 +20,15 @@ function checkAverage() {
     var average = (averageInput1 + averageInput2) / 2;
     averageResult.innerHTML = average;
 }
+/*---------------------------------------------------------------------------------------------*/
+/*                                         Factorial                                           */
+/*---------------------------------------------------------------------------------------------*/
+function checkFactorial() {
+    var factorialInput = Number(document.getElementById('factorial-input').value);
+    var factorialResult = document.getElementById('factorial-result');
+    var factorialOutput = 1;
+    for (var i = 1; i <= factorialInput; i++) {
+        factorialOutput = factorialOutput * i;
+    }
+    factorialResult.innerHTML = factorialOutput;
+}
