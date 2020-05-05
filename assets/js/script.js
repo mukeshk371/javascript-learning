@@ -44,3 +44,32 @@ function checkSumOfEvenNumbers() {
         evenSumResult.innerHTML = evenSum;
     }
 }
+/*---------------------------------------------------------------------------------------------*/
+/*                                    Sum of Even Numbers                                      */
+/*---------------------------------------------------------------------------------------------*/
+function checkLeapYear() {
+    var leapYearInput = Number(document.getElementById('leap-year-input').value);
+    var leapYearResult = document.getElementById('leap-year-result');
+    if (((leapYearInput % 4 == 0) && (leapYearInput % 100 != 0)) || (leapYearInput % 400 == 0)) {
+        leapYearResult.innerHTML = leapYearInput + ' is a leap year.';
+    } else {
+        leapYearResult.innerHTML = leapYearInput + ' is not a leap year.';
+    }
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                                      Perfect Number                                         */
+/*---------------------------------------------------------------------------------------------*/
+function checkPerfectNumber() {
+    var perfectNumberInput = Number(document.getElementById('perfect-number-input').value);
+    var perfectNumberResult = document.getElementById('perfect-number-result');
+    var sum = 0;
+    for (var i = 0; i < perfectNumberInput; i++) {
+        if (perfectNumberInput % i == 0) {
+            sum += i;
+        } else if (sum == perfectNumberInput) {
+            perfectNumberResult.innerHTML = perfectNumberInput + ' is a perfect number.';
+        } else {
+            perfectNumberResult.innerHTML = perfectNumberInput + ' is not a perfect number.';
+        }
+    }
+}
