@@ -32,3 +32,15 @@ function checkFactorial() {
     }
     factorialResult.innerHTML = factorialOutput;
 }
+/*---------------------------------------------------------------------------------------------*/
+/*                                    Sum of Even Numbers                                      */
+/*---------------------------------------------------------------------------------------------*/
+function checkSumOfEvenNumbers() {
+    var evenInput = Number(document.getElementById('even-input').value);
+    var evenSumResult = document.getElementById('even-sum-result');
+    var evenSum = 0;
+    for (var i = 0; i <= evenInput; i += 2) {
+        evenSum += i;
+        evenSumResult.innerHTML = evenSum;
+    }
+}
