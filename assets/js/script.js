@@ -73,3 +73,25 @@ function checkPerfectNumber() {
         }
     }
 }
+/*---------------------------------------------------------------------------------------------*/
+/*                               Check Maximum number among all                                 */
+/*---------------------------------------------------------------------------------------------*/
+function checkMaxNumber() {
+    var maxNumberInput1 = Number(document.getElementById('max-number-input1').value);
+    var maxNumberInput2 = Number(document.getElementById('max-number-input2').value);
+    var maxNumberInput3 = Number(document.getElementById('max-number-input3').value);
+    var maxNumberResult = document.getElementById('max-number-result');
+    if (maxNumberInput1 > maxNumberInput2) {
+        if (maxNumberInput1 > maxNumberInput3) {
+            maxNumberResult.innerHTML = maxNumberInput1 + ' is maximum number.';
+        } else {
+            maxNumberResult.innerHTML = maxNumberInput3 + ' is maximum number.';
+        }
+    } else {
+        if (maxNumberInput2 > maxNumberInput3) {
+            maxNumberResult.innerHTML = maxNumberInput2 + ' is maximum number.';
+        } else {
+            maxNumberResult.innerHTML = maxNumberInput3 + ' is maximum number.';
+        }
+    }
+}
