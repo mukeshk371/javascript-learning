@@ -95,3 +95,19 @@ function checkMaxNumber() {
         }
     }
 }
+/*---------------------------------------------------------------------------------------------*/
+/*                                   Check Profit and Loss                                     */
+/*---------------------------------------------------------------------------------------------*/
+function checkProfitLoss() {
+    var costPrice = Number(document.getElementById('cost-price-input').value);
+    var sellingPrice = Number(document.getElementById('selling-price-input').value);
+    var profitLossResult = document.getElementById('profit-loss-result');
+    var result = sellingPrice - costPrice;
+    if(result > 0) {
+        profitLossResult.innerHTML = 'Your profit is ₹' + result + '.';
+    } else if (result == 0) {
+        profitLossResult.innerHTML = 'You have no loss.';
+    } else {
+        profitLossResult.innerHTML = 'Your loss is ₹' + (result / -1) + '.';
+    }
+}
