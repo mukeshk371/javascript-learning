@@ -103,11 +103,46 @@ function checkProfitLoss() {
     var sellingPrice = Number(document.getElementById('selling-price-input').value);
     var profitLossResult = document.getElementById('profit-loss-result');
     var result = sellingPrice - costPrice;
-    if(result > 0) {
+    if (result > 0) {
         profitLossResult.innerHTML = 'Your profit is ₹' + result + '.';
     } else if (result == 0) {
         profitLossResult.innerHTML = 'You have no loss.';
     } else {
         profitLossResult.innerHTML = 'Your loss is ₹' + (result / -1) + '.';
+    }
+}
+/*---------------------------------------------------------------------------------------------*/
+/*                                   Array Odd or Even Number                                  */
+/*---------------------------------------------------------------------------------------------*/
+var oddEvenArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function showArray() {
+    var showArrayData = document.getElementById('array-data');
+    for (var i = 0; i < oddEvenArray.length; i++) {
+        var arrayData = document.createElement('SPAN');
+        arrayData.classList.add('mr-1');
+        arrayData.innerHTML = oddEvenArray[i];
+        showArrayData.appendChild(arrayData);
+    }
+}
+function checkArrayEven() {
+    var showEvenArrayResult = document.getElementById('array-even-result');
+    for (var i = 0; i < oddEvenArray.length; i++) {
+        if ((oddEvenArray[i] % 2) == 0) {
+            var evenArrayData = document.createElement('SPAN');
+            evenArrayData.classList.add('mr-1');
+            evenArrayData.innerHTML = oddEvenArray[i];
+            showEvenArrayResult.appendChild(evenArrayData);
+        }
+    }
+}
+function checkArrayOdd() {
+    var showOddArrayResult = document.getElementById('array-odd-result');
+    for (var i = 0; i < oddEvenArray.length; i++) {
+        if ((oddEvenArray[i] % 2) != 0) {
+            var oddArrayData = document.createElement('SPAN');
+            oddArrayData.classList.add('mr-1');
+            oddArrayData.innerHTML = oddEvenArray[i];
+            showOddArrayResult.appendChild(oddArrayData);
+        }
     }
 }

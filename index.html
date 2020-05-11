@@ -13,7 +13,7 @@
     <script src="assets/js/script.js"></script>
 </head>
 
-<body>
+<body onload="showArray()">
     <div class="p-05">
         <!-- Start Odd Even -->
         <div class="p-05">
@@ -130,7 +130,7 @@
             </div>
         </div>
         <!-- End Maximum number among all -->
-        <!-- Start Check Maximum number among all -->
+        <!-- Start Profit and Loss -->
         <div class="p-05">
             <div class="card">
                 <div class="card-header flex-start-center">
@@ -146,7 +146,27 @@
                 </div>
             </div>
         </div>
-        <!-- End Maximum number among all -->
+        <!-- End Profit and Loss -->
+        <!-- Start perfect number -->
+        <div class="p-05">
+            <div class="card">
+                <div class="card-header flex-start-center">
+                    <strong>Q9. Check Odd Even numbers from array</strong>
+                </div>
+                <div class="card-body p-1">
+                    <div class="pb-1" id="array-data">
+                        <!-- <span id="array-data"></span> -->
+                    </div>
+                    <button class="btn-primary mr-1" onclick="checkArrayEven()">Check Even Number</button>
+                    <button class="btn-primary" onclick="checkArrayOdd()">Check Odd Number</button>
+                </div>
+                <div class="card-footer p-1">
+                    <span class="d-block mb-1">Even Numbers = <strong id="array-even-result"></strong></span>
+                    <span class="d-block">Odd Numbers = <strong id="array-odd-result"></strong></span>
+                </div>
+            </div>
+        </div>
+        <!-- End perfect number -->
     </div>
 </body>
 
