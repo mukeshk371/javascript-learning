@@ -146,3 +146,13 @@ function checkArrayOdd() {
         }
     }
 }
+
+
+/******************************* */
+var newArray = [1, 2, 3, 4, 3, 2];
+for (var i = 0; i < newArray.length; i++) {
+    if (newArray[i] === 2) {
+        newArray.splice(i, 1);
+    }
+}
+console.log(newArray);
